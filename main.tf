@@ -215,6 +215,8 @@ data "template_file" "userdata" {
     certificate_authority_data = "${var.cluster_certificate_authority_data}"
     cluster_name               = "${var.cluster_name}"
     bootstrap_extra_args       = "${var.bootstrap_extra_args}"
+    before_cluster_joining_userdata = "${var.before_cluster_joining_userdata}"
+    after_cluster_joining_userdata  = "${var.after_cluster_joining_userdata}"
   }
 }
 
